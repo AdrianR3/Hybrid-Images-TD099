@@ -1,4 +1,3 @@
-
 // Gaussian High Pass Pixel Shader
 
 uniform float strength;
@@ -12,6 +11,14 @@ const float kernel[5][5] = {
     { 1.0 / 256.0,  4.0 / 256.0,  6.0 / 256.0,  4.0 / 256.0,  1.0 / 256.0 }
 };
 
+const float otherKernel[5][5] = {
+    { 1.0,  4.0,  6.0,  4.0,  1.0},
+    { 4.0, 16.0, 24.0, 16.0,  4.0},
+    { 6.0, 24.0, 36.0, 24.0,  6.0},
+    { 4.0, 16.0, 24.0, 16.0,  4.0},
+    { 1.0,  4.0,  6.0,  4.0,  1.0}
+};
+
 vec4 gaussianBlur(sampler2D tex, vec2 uv)
 {
     vec4 result = vec4(0.0);
@@ -21,7 +28,7 @@ vec4 gaussianBlur(sampler2D tex, vec2 uv)
     {
         for (int j = -2; j <= 2; ++j)
         {
-            result += texture(tex, uv + vec2(i, j) * texelSize) * kernel[i+2][j+2];
+            result += texture(tex, uv + vec2(i, j) * texelSize) * otherKernel[i+2][j+2] / (36.0 * 8);
         }
     }
 
