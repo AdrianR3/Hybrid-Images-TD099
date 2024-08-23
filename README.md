@@ -1,5 +1,11 @@
 # Hybrid Images in TouchDesigner
 
+### Quick Start
+
+Download and open the latest version of `final_hybrid_images.tox`. Then extract the parts of the network relevant to your project from the <kbd>`project1` COMP</kbd>.
+
+A full screenshot of the project is available in `sessions/6/progress.png`.
+
 ## What is a Hybrid Image?
 
 A [hybrid image](https://en.wikipedia.org/wiki/Hybrid_image) is an optical illusion which involves compositing two separate images together into one. Depending on the physical viewing distance, either one or the other image is processed by the viewer's brain.
