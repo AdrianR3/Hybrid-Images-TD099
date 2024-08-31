@@ -1,10 +1,17 @@
 # Hybrid Images in TouchDesigner
 
+### About Project
+
+This project is my best attempt at implementing the [hybrid image](https://en.wikipedia.org/wiki/Hybrid_image) optical illusion in [TouchDesigner](https://en.wikipedia.org/wiki/TouchDesigner). There is not a lot of documentation in this repository to explain the inner workings of the code itself. However, there are annotations left inside of the project file (`final_hybrid_images.tox`) to explain parts of the network.
+
 ### Quick Start
 
 Download and open the latest version of `final_hybrid_images.tox`. Then extract the parts of the network relevant to your project from the <kbd>`project1` COMP</kbd>.
 
-A full screenshot of the project is available in `sessions/6/progress.png`.
+<img src="https://raw.githubusercontent.com/AdrianR3/Hybrid-Images-TD099/c9487ad7e1f3ae9beebac9e7c5873c9b13c1f9d1/sessions/6/progress.png"></img>
+This full screenshot of the project is available in `sessions/6/progress.png`. 
+
+More progress screenshots are available in other session folders.
 
 ## What is a Hybrid Image?
 
